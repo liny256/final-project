@@ -1,0 +1,537 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0px;
+}
+.container{
+
+}
+#container{
+
+}
+#small-con{
+  width: 500px;
+  position: relative;
+}
+a{
+  color:white;
+}
+/* index page background image */
+.skyline{
+  position:relative;
+  width:100vw;
+  height:80vh;
+  top:0px;
+  margin-top: 0px;
+  background-image: url(../resources/img/skyline.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* contact page background image */
+
+.img{
+  position:absolute;
+  width:100vh;
+  height:100vh;
+  top:0px;
+  z-index:-100;
+}
+img{
+  width:100vw;
+  position: absolute;
+  z-index: -999;
+}
+.img2{
+  position:absolute;
+  width:100vh;
+  height:100vh;
+  top:1200px;
+  z-index:-100;
+}
+.img3{
+  position:absolute;
+  width:100vh;
+  height:100vh;
+  top:2800px;
+  z-index:-100;
+}
+#white3{
+  top:3830px;
+}
+#navi-index{
+ top:-100px;
+ position:absolute;
+ z-index: 999;
+}
+#navi{
+ top:10px;
+ position:absolute;
+ z-index: 999;
+}
+.title{
+  font-size:60px;
+  color:black;
+  font-weight: 500;
+  width:400px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+#right-food-up{
+  position: absolute;
+  top:-160px;
+}
+#right-food-3{
+  position: absolute;
+  width:400px !important;
+  top:-200px;
+}
+#right-event-up{
+  position: absolute;
+  top:-160px;
+}
+#right-event1-up{
+  position: absolute;
+  top:-30px;
+}
+#right-event2-up{
+  position:absolute;
+  top:-80px;
+}
+#left-food-up{
+  position: absolute;
+  top:-165px;
+}
+.home-aboutus{
+  font-weight: 500;
+  color:white;
+  font-size: 20px;
+  z-index: 999;
+  position:absolute;
+  left:30px;
+  width: 200px;
+}
+.contact{
+  font-weight: 500;
+  color:red;
+  font-size: 20px;
+  z-index: 999;
+  position:absolute;
+  left:1320px;
+  width: 200px;
+}
+.navi-come-in{
+  animation-name: navi-come;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes navi-come {
+  from{
+    top:-100px;
+  }
+  to{
+    top:0px;
+  }
+}
+
+#urban-lifestyle{
+  position:absolute;
+  left:30%;
+  top:calc(30% - 50px);
+  font-weight:700;
+  font-size: 100px;
+  color:white;
+}
+
+
+.event-head{
+  position:absolute;
+  left:15%;
+  top:calc(30% - 50px);
+  font-weight:700;
+  font-size: 100px;
+  color:white;
+  width:80vw;
+}
+
+#contact-head{
+  position:absolute;
+  left:30%;
+  top:calc(30% - 50px);
+  font-weight:700;
+  font-size: 100px;
+  color:white;
+  width:80vw;
+}
+
+
+
+.fade-in{
+  animation-name: text-fade-in;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes text-fade-in {
+ from{
+   top:calc(30% - 50px);
+ }
+ to{
+   top:30%;
+ }
+}
+
+.gradient{
+  background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1));
+  position:relative;
+  width:100vw;
+  height:50px;
+  left:0px;
+  top:-50px;
+  z-index: 3;
+}
+
+
+/* scroll down icon */
+#scroll-down{
+position: absolute;
+left:50%;
+top:800px;
+}
+.scroll-down-ani{
+  animation-name: flowup;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes flowup {
+  from{
+    top:800px;
+  }
+  to{
+    top:520px;
+  }
+}
+.holo-cir{
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 50%;
+  width:10px;
+  height: 10px;
+  left:-5px;
+  z-index: 99;
+}
+.line-ver{
+  position: absolute;
+  border-left: 2px solid white;
+  width: 30px;
+  height:130px;
+  z-index: 99;
+  left:1px;
+  top:12px;
+}
+#stext{
+  position:absolute;
+  font-size: 12px;
+  color:white;
+  font-weight: 500;
+  left:20px;
+  top:10px;
+  width:100px;
+  display: inline;
+}
+
+/* Best Foodie Recipies+Best Event */
+.white{
+  position:absolute;
+  width: 100vw;
+  height:800px;
+  background-color: white;
+  z-index: 2;
+}
+.text{
+  position:absolute;
+  font-weight: 500;
+  color:black;
+  left:50%;
+  top:20%;
+}
+.resource-link{
+  position: absolute;
+  top:60%;
+  left:50%;
+  font-size: 24px;
+  font-weight: 400;
+  color: black;
+}
+.resource-link a{
+  color:black;
+}
+
+/* Foodie */
+#foodsec{
+
+}
+
+#white1{
+  top:640px;
+}
+
+#bf-title{
+  font-size:60px;
+  top:-50px;
+  position: absolute;
+  color:white;
+}
+.bf-title-showup{
+  animation-name: bft-showup;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes bft-showup {
+  from{
+    top:-50px;
+    color:white;
+  }
+  to{
+    top:0px;
+    color:black;
+  }
+}
+
+#bf-sub{
+  left:3px;
+  font-size: 24px;
+  font-style: italic;
+  position: absolute;
+  top: 250px;
+  color: white;
+}
+.bf-sub-showup{
+  animation-name: bfs-showup;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes bfs-showup {
+  from{
+    top:250px;
+    color:white;
+  }
+  to{
+    top:200px;
+    color:black;
+  }
+}
+
+#food-navi{
+  position: absolute;
+  top:100px;
+  color: white;
+}
+.resource-nav-2{
+  position: absolute;
+  top:60%;
+  left:50%;
+  font-size: 24px;
+  font-weight: 400;
+}
+#food-navi a{
+  color:white;
+ animation-name: color-diff;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
+ animation-fill-mode: forwards;
+ animation-delay: 5s;
+}
+@keyframes color-diff {
+  from{
+    color:white;
+  }
+  to{
+    color:black;
+  }
+}
+.foodnav-up{
+  animation-name: foodnav-up;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes foodnav-up {
+  from{
+   top: 100px;
+  }
+  to{
+    top: 0px;
+  }
+}
+
+.food{
+  position:absolute;
+  background-image: url(../resources/img/food.jpeg);
+  width:100vw;
+  height:80vh;
+  top:1500px;
+  z-index: 2;
+}
+.gradient-down{
+  background-image: linear-gradient(rgba(255,255,255,1), rgba(255,255,255,0));
+  position:relative;
+  width:100vw;
+  height:50px;
+  left:0px;
+  top:819px;
+  z-index: 3;
+}
+
+
+
+/* Event */
+#eventsec{
+
+}
+#white2{
+  top:2130px;
+}
+#be-title{
+  font-size: 60px;
+  top:-50px;
+  position: absolute;
+  color:white;
+}
+.be-title-showup{
+  animation-name: BETshowup;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes BETshowup {
+  from{
+    top:-50px;
+    color:white;
+  }
+  to{
+    top:0px;
+    color:black;
+  }
+}
+#be-sub{
+  left:3px;
+  font-size: 24px;
+  position: absolute;
+  color:white;
+  top:250px;
+}
+
+.be-sub-showup{
+  animation-name: bes-showup;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes bes-showup{
+  from{
+    top:250px;
+    color:white;
+  }
+  to{
+    top:200px;
+    color:black;
+  }
+}
+.resource-navi-3{
+  position: absolute;
+  top:60%;
+  left:50%;
+  font-size: 24px;
+  font-weight: 400;
+}
+#event-navi{
+  position: absolute;
+  top:100px;
+  color: white;
+}
+#event-navi a{
+  color:white;
+ animation-name: color-diff;
+ animation-duration: 3s;
+ animation-iteration-count: 1;
+ animation-fill-mode: forwards;
+ animation-delay: 5s;
+}
+.eventnav-up{
+  animation-name: eventnav-up;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes eventnav-up {
+  from{
+   top: 100px;
+  }
+  to{
+    top: 0px;
+  }
+}
+
+#lower-grad{
+  top:1350px;
+}
+/* contact page info  */
+.info{
+  position: absolute;
+  font-weight: 500;
+  color:black;
+  top:300px;
+  left:20%;
+  height:400px;
+  width:100%;
+  background-color: white;
+  font-size: 18px;
+}
+.left{
+  position: absolute;
+}
+.right{
+  position: absolute;
+  width:50vw;
+  left:40vw;
+}
+.center{
+  position: absolute;
+  width: 50vw;
+  left:4vw;
+  font-size: 24px !important;
+  top: -50px !important;
+}
+
+/* calendar css */
+.square{
+  position: absolute;
+  width: 150px;
+  height:150px;
+  background-color: white;
+  border: 2px black dashed;
+  margin-left: 2.5%;
+	margin-top: 2.5%;
+  display: inline-block;
+}
+
+.circle{
+  position: absolute;
+  width:150px;
+  height:150px;
+  border-radius: 50%;
+  background-color: rgb(42, 158, 215);
+  margin-left: 2.5%;
+  margin-top: 2.5%;
+  display: inline-block;
+}
+#calendar{
+  font-weight:700;
+  font-size: 100px;
+  color:black;
+  left:40vw!important;
+}
