@@ -45,7 +45,7 @@ img{
   width:100vh;
   height:100vh;
   top:1200px;
-  z-index:-100;
+  z-index:-99;
 }
 .img3{
   position:absolute;
@@ -99,6 +99,10 @@ img{
 #left-food-up{
   position: absolute;
   top:-165px;
+}
+#left-food-1{
+  position: absolute;
+  top:-170px;
 }
 .home-aboutus{
   font-weight: 500;
@@ -304,8 +308,8 @@ top:800px;
   font-size: 24px;
   font-style: italic;
   position: absolute;
-  top: 250px;
-  color: white;
+  top: 200px;
+  color: black;
 }
 .bf-sub-showup{
   animation-name: bfs-showup;
@@ -313,13 +317,14 @@ top:800px;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+
 @keyframes bfs-showup {
   from{
-    top:250px;
-    color:white;
+    top:200px;
+    color:black;
   }
   to{
-    top:200px;
+    top:250px;
     color:black;
   }
 }
@@ -361,9 +366,11 @@ top:800px;
 @keyframes foodnav-up {
   from{
    top: 100px;
+   color: white;
   }
   to{
     top: 0px;
+    color:black
   }
 }
 
@@ -401,12 +408,12 @@ top:800px;
   color:white;
 }
 .be-title-showup{
-  animation-name: BETshowup;
+  animation-name: Bet-showup;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-@keyframes BETshowup {
+@keyframes Bet-showup {
   from{
     top:-50px;
     color:white;
@@ -461,13 +468,13 @@ top:800px;
  animation-delay: 5s;
 }
 .eventnav-up{
-  animation-name: eventnav-up;
+  animation-name: eventnavi-up;
   animation-duration: 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-@keyframes eventnav-up {
+@keyframes eventnavi-up {
   from{
    top: 100px;
   }
