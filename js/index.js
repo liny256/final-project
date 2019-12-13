@@ -54,28 +54,59 @@ AniForNaviLate();
 //scroll and best food show up
 //bigtitle show up
 var bigFood=document.getElementById('bf-title');
-window.addEventListener('scroll', BfShowUpLate);
+var subFood1=document.getElementById('bf-sub');
+var foodN=document.getElementById('food-navi');
 
-function BfShowUpLate(){
-  setTimeout(BfShowUp,4000);
-}
-function BfShowUp(){
-  bigFood.classList.add('bf-title-showup');
-}
+var bigEvent=document.getElementById('be-title');
+var subFood2=document.getElementById('be-sub');
+var eventN=document.getElementById('event-navi');
+
+//type the full function syntax 'function BfShowUpLate(){}'for functions does not exist before this line
+window.addEventListener('scroll', function BfShowUpLate() {
+  //'<=less than or equal to'
+  //getBoundingClientRect means to get the dimensions and the positions of a specific element
+  if (bigFood.getBoundingClientRect().y <= window.innerHeight / 2) {
+    window.removeEventListener('scroll', BfShowUpLate);
+    setTimeout(function () {
+      bigFood.classList.add('bf-title-showup');
+      subFood1.classList.add('bf-sub-showup');
+      foodN.classList.add('foodnav-up');
+      console.log('test');
+    }, 400);
+  }
+});
+
+window.addEventListener('scroll', function BeShowUpLate() {
+  if (bigEvent.getBoundingClientRect().y <= window.innerHeight / 2) {
+    window.removeEventListener('scroll', BeShowUpLate);
+    setTimeout(function () {
+      bigEvent.classList.add('be-title-showup');
+      subFood2.classList.add('be-sub-showup');
+      eventN.classList.add('foodnav-up');
+    }, 400);
+  }
+})
+
+// function BfShowUp(){
+//   bigFood.classList.add('bf-title-showup');
+// }
 //subtitle show up
-var subFood=document.getElementById('bf-sub');
-window.addEventListener('scroll', BFsubShowUpLate);
+// var subFood1=document.getElementById('bf-sub');
+// window.addEventListener('scroll', BFsubShowUpLate);
 
-function BFsubShowUpLate(){
-  setTimeout(BFsubShowUp,4000);
-}
+// function BFsubShowUpLate(){
+//   if (subFood1.getBoundingClientRect().y <= window.innerHeight / 2) {
+//     setTimeout(BFsubShowUp,4000);
+//   }
+// }
 function BFsubShowUp(){
-  subFood.classList.add('bf-sub-showup');
+  subFood1.classList.add('bf-sub-showup');
+  console.log('asdfsd');
 }
 
 //food navigation show up
-var foodN=document.getElementById('food-navi');
-window.addEventListener('scroll', BFNavUpLate);
+// var foodN=document.getElementById('food-navi');
+// window.addEventListener('scroll', BFNavUpLate);
 function BFNavUp(){
   foodN.classList.add('foodnav-up');
 }
@@ -86,28 +117,28 @@ function BFNavUpLate(){
 
 //scroll and best events show up
 //bigtitle show up
-var bigEvent=document.getElementById('be-title');
-window.addEventListener('scroll',BeShowUpLate);
+// var bigEvent=document.getElementById('be-title');
+// window.addEventListener('scroll',BeShowUpLate);
 
 function BeShowUp(){
   bigEvent.classList.add('be-title-showup');
 }
-function BeShowUpLate(){
-  setTimeout(BeShowUp,5000);
-}
+// function BeShowUpLate(){
+//   setTimeout(BeShowUp,5000);
+// }
 //subtitle show up
-var subFood=document.getElementById('be-sub');
-window.addEventListener('scroll', BEsubShowUpLate);
+// var subFood2=document.getElementById('be-sub');
+// window.addEventListener('scroll', BEsubShowUpLate);
 
 function BEsubShowUpLate(){
   setTimeout(BEsubShowUp,5000);
 }
 function BEsubShowUp(){
-  subFood.classList.add('be-sub-showup');
+  subFood2.classList.add('be-sub-showup');
 }
 //event navigation show up
-var eventN=document.getElementById('food-navi');
-window.addEventListener('scroll', BFNavUpLate);
+// var eventN=document.getElementById('food-navi');
+// window.addEventListener('scroll', BFNavUpLate);
 function BFNavUp(){
   foodN.classList.add('foodnav-up');
 }

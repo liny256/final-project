@@ -8,10 +8,7 @@ body{
 #container{
 
 }
-#small-con{
-  width: 500px;
-  position: relative;
-}
+
 a{
   color:white;
 }
@@ -53,6 +50,10 @@ img{
   height:100vh;
   top:2800px;
   z-index:-100;
+}
+#move-past-event{
+  left:1200px!important;
+  width:400px!important;
 }
 #white3{
   top:3830px;
@@ -341,13 +342,13 @@ top:800px;
   font-size: 24px;
   font-weight: 400;
 }
-#food-navi a{
+#food-navi a {
   color:white;
  animation-name: color-diff;
  animation-duration: 3s;
  animation-iteration-count: 1;
  animation-fill-mode: forwards;
- animation-delay: 5s;
+ /* animation-delay: 5s; */
 }
 @keyframes color-diff {
   from{
@@ -465,7 +466,7 @@ top:800px;
  animation-duration: 3s;
  animation-iteration-count: 1;
  animation-fill-mode: forwards;
- animation-delay: 5s;
+ /* animation-delay: 5s; */
 }
 .eventnav-up{
   animation-name: eventnavi-up;
@@ -541,4 +542,20 @@ top:800px;
   font-size: 100px;
   color:black;
   left:40vw!important;
+}
+#small-con{
+  /* flex means it can be flexible without defining the item's exact size */
+  /* if the container is flexible, it wil atomatically align the children and resize the children atomatically */
+  display: flex;
+  position: relative;
+  /* row is the direction of the children (horizontally), column(vertical) , row reverse is backwards*/
+  /* wrap means if the size of the children does not fit in to one line, it breaks into a new line instead of squeezing the size of the children */
+  flex-flow: row wrap;
+  /* justify-content:center; centers the elements and the spacing is the original spacing, while justify content: space-between; centers the element to the screen, */
+  /* fits the element to both ends of the container, the spacing is forced to change to fit the whole container, (in this case width, cause it's row now) */
+  /* align-items: center; aligns the opposite direction, for example now it is row so the align-items will align stuff vertically */
+  justify-content: center;
+}
+@media query {
+
 }
